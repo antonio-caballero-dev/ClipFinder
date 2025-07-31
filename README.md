@@ -94,10 +94,12 @@ La aplicación web estará disponible en `http://localhost:5173` y el backend en
 
 ## Video demostrativo / Demo Video
 
-<div align="center">
-  <h3>🎦 Aquí puedes ver un video demostrativo del funcionamiento de ClipFinder:</h3>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/v4nJRlXDQG4" title="Demo de ClipFinder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<p align="center">
+  <b>🎦 Aquí puedes ver un video demostrativo del funcionamiento de ClipFinder:</b><br><br>
+  <a href="https://youtu.be/v4nJRlXDQG4" target="_blank">
+    <img src="https://img.youtube.com/vi/v4nJRlXDQG4/0.jpg" alt="Demo de ClipFinder" width="480"/>
+  </a>
+</p>
 
 ---
 ## Licencia / License
