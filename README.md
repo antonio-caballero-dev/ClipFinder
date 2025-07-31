@@ -94,11 +94,9 @@ La aplicación web estará disponible en `http://localhost:5173` y el backend en
 
 ## Video demostrativo / Demo Video
 
-
 🎦 Aquí puedes ver un video demostrativo del funcionamiento de ClipFinder:
 
-<!-- Reemplaza el enlace de YouTube por el tuyo si lo tienes -->
-[![Demo de ClipFinder](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
+[![Demo de ClipFinder](https://img.youtube.com/vi/v4nJRlXDQG4/0.jpg)](https://youtu.be/v4nJRlXDQG4)
 
 ---
 ## Licencia / License
