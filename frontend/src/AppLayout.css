@@ -1,0 +1,906 @@
+
+
+
+/* Paleta de colores principal */
+:root {
+    --color-primary: #04a4d4;
+    --color-primary-light: #2687c0;
+    --color-primary-dark: #3893dd;
+    --color-accent: #00b0ff;
+    --color-accent-light: #6eb5f0;
+    --color-bg-light: #cff0ff;
+    --color-bg-gradient: linear-gradient(135deg, #a4d7fc 0%, #f8fafc 100%);
+    --color-bg-white: #fff;
+    --color-text-main: #04bceb;
+    --color-shadow: #b3e5fc;
+}
+
+
+
+/* Sidebar moderno */
+.sidebar-modern {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    background: var(--color-bg-gradient);
+    box-sizing: border-box;
+    width: 100%;
+    gap: 2.5rem;
+    border-right: #4bccf3 3px solid;
+
+}
+
+.sidebar-title {
+    color: var(--color-primary);
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+    width: 100%;
+    background: var(--color-primary);
+    background-clip: text;
+}
+
+/* Zona de drop moderna */
+
+.drop-zone-modern {
+    border: 3px dashed var(--color-accent);
+    border-radius: 25px;
+    background: var(--color-bg-light);
+    color: var(--color-primary-light);
+    padding: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 100px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px var(--color-shadow);
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drop-zone-main {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.drop-zone-sub {
+    font-size: 0.95rem;
+    color: var(--color-accent-light);
+}
+
+
+/* Lista de videos moderna */
+.video-list-modern {
+    background: var(--color-bg-white);
+    border-radius: 14px;
+    color: var(--color-text-main);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto auto;
+    min-height: 0;
+    max-height: 100%;
+}
+
+.video-list-title {
+    color: var(--color-primary-light);
+    font-size: 1.35rem;
+    margin: 0;
+    margin-bottom: 1.1rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.video-list-ul {
+    list-style: none;
+    padding: 0.15rem 0 0.15rem 0;
+    margin: 0;
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-list-item {
+    padding: 1.1rem 0;
+    border: 2px solid var(--color-accent-light);
+    border-radius: 14px;
+    background: #f6fbff;
+    box-shadow: 0 4px 16px #e3f2fd;
+    margin-bottom: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+    text-indent: 2rem;
+    width: 98%;
+    max-width: 520px;
+    font-size: 1.18rem;
+    letter-spacing: 0.15px;
+}
+
+.video-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    color: var(--color-primary-dark);
+   
+    
+  
+}
+
+.video-list-reload {
+    background: var(--color-primary-light);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 16px;
+    margin-right: 16px;
+    opacity: 1;
+    transition: opacity 0.2s, background 0.18s;
+    min-width: 120px;
+    width: 50%;
+    padding: 0.5em 1.8em;
+    align-self: center;
+}
+
+.video-list-reload:hover:enabled {
+    background: var(--color-primary-dark);
+    opacity: 0.92;
+}
+
+.video-list-reload:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Estilos para los items de la lista de videos */
+.video-list-item-custom {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: background 0.18s, border 0.18s, box-shadow 0.18s;
+    color: #1976d2;
+    border: 1.2px solid #e0e0e0;
+    background: #f6fbff;
+    font-weight: 500;
+    text-indent: 1.2rem;
+
+    width: 90%;
+    max-width: 340px;
+    margin: 0.14rem auto 0.14rem auto;
+    box-shadow: 0 1px 4px #e3f2fd44;
+    padding: 0.28rem 0.6rem 0.28rem 0.35rem;
+    min-height: 34px;
+    max-height: 40px;
+}
+
+.video-list-item-custom:hover {
+    background: #ffffff;
+    border: 2px solid var(--color-accent-light);
+    color: #0b0385;
+    box-shadow: 0 2px 8px #90caf9aa;
+}
+
+.video-list-item-custom.selected {
+    background: #d7eafaff;
+    border: 2px solid var(--color-accent-light);
+    font-weight: 700;
+    box-shadow: 0 2px 8px #90caf9aa;
+}
+
+.video-list-item-custom img {
+    width: 36px;
+    height: 22px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px var(--color-shadow);
+}
+
+
+/* Video status panel styles */
+.video-status-panel {
+    margin-top: 20px;
+    padding: 12px;
+    border-top: var(--color-primary) 4px solid;
+}
+
+.video-status-header,
+.video-status-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.video-status-title,
+.video-status-label {
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--color-primary);
+    margin-bottom: 5px  ;
+    white-space: break-spaces;
+}
+
+.video-status-label {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+.video-status-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.video-status-item {
+    gap: 10px;
+    font-size: 18px;
+    color: #1976d2;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.video-status-dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+    font-size: 13px;
+    border: 2px solid #bbb;
+    background: #bbb;
+}
+.video-status-dot.ok {
+    background: #4caf50;
+    border-color: #388e3c;
+}
+.video-status-dot.fail {
+    background: #bbb;
+    border-color: #bbb;
+}
+
+.video-status-actions {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.video-status-preprocess-btn {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 18px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 1;
+    transition: background 0.2s, opacity 0.2s;
+    margin-top: 10px;
+}
+.video-status-preprocess-btn:hover:enabled {
+    background: #2196f3;
+    opacity: 0.92;
+}
+.video-status-preprocess-btn:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Botón preparado en verde */
+.video-status-preprocess-btn.prepared {
+  background: #43a047 !important;
+  color: #fff;
+  border: none;
+  opacity: 1;
+  cursor: default;
+}
+
+.video-status-empty {
+    text-align: center;
+    color: #888;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+
+
+/* VideoPlayer */
+.video-player-title {
+    color: #1976d2;
+    font-weight: 800;
+    font-size: 5.1rem;
+  
+    letter-spacing: 1.2px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    background: linear-gradient(90deg, #3eb3f7 -20%, #0456a8 120%);
+    filter: brightness(1.15) contrast(1.2) saturate(2);
+    -webkit-background-clip: text;  -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-shadow: var(--color-bg-white);
+ 
+}
+
+/* Tamaño normal */
+.video-player-element {
+    width: 100%;
+    max-width: 700px;
+    min-height: 260px;
+    border-radius: 14px;
+    margin: 18px auto 0 auto;
+    background: #000;
+    box-shadow: 0 2px 16px #90caf9cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: max-width 0.25s, min-height 0.25s, height 0.25s;
+}
+
+/* Cuando hay clips encontrados, reducir el tamaño del reproductor principal */
+.video-player-element.shrinked {
+    max-width: 420px;
+    min-height: 120px;
+    height: 180px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.video-player-element video {
+    max-width: 100%;
+    max-height: 70vh;
+    min-height: 180px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.video-player-placeholder {
+    color: var(--color-primary);
+    margin-top: 32px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    opacity: 0.9;
+    text-align: center;
+    padding: 200px 100px;
+    border: 2.5px dashed var(--color-shadow);
+    border-radius: 14px;
+    background: var(--color-bg-gradient);
+    box-sizing: border-box;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: border 0.18s, background 0.18s;
+}
+
+
+
+/* Consulta (zona de búsqueda de clips) */
+.consulta-title {
+  color: #1976d2;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+  text-align: center;
+}
+
+.consulta-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.consulta-clear-btn {
+  background: #fff;
+  color: #1976d2;
+  border: 1.5px solid #b3e5fc;
+  border-radius: 7px;
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  opacity: 1;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  margin-left: 2px;
+}
+.consulta-clear-btn:hover {
+  background: #e3f2fd;
+  color: #0b0385;
+  border-color: #1976d2;
+}
+
+.consulta-query-input {
+  flex: 1;
+  font-size: 17px;
+  padding: 8px 12px;
+  border-radius: 7px;
+  border: 1.5px solid #b3e5fc;
+  outline: none;
+  background: #fff;
+  color: #1976d2;
+  transition: background 0.2s, color 0.2s;
+}
+
+.consulta-buscar-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  opacity: 1;
+  transition: background 0.2s, opacity 0.2s;
+}
+.consulta-buscar-btn-disabled {
+  background: #bbb !important;
+  cursor: not-allowed !important;
+  opacity: 0.7 !important;
+}
+.consulta-buscar-icon {
+  font-size: 20px;
+}
+
+.consulta-sliders {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.consulta-slider-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+.consulta-slider-label {
+  font-weight: 500;
+  color: #1976d2;
+  margin-bottom: 2px;
+}
+.consulta-slider {
+  accent-color: #1976d2;
+}
+
+.consulta-clips-loading {
+  color: #1976d2;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 1.5em auto;
+}
+.consulta-clips-empty {
+  color: #888;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 1.5em auto;
+}
+.consulta-clips-grid-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 10px;
+}
+.consulta-clip-card {
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px #b3e5fc44;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.consulta-clip-video {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 7px;
+  margin-bottom: 6px;
+}
+.consulta-clip-time {
+  font-size: 13px;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+
+/* Modal para clip expandido */
+.consulta-clip-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 40, 80, 0.38);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.22s cubic-bezier(0.4,0,0.2,1);
+  backdrop-filter: blur(4px) saturate(1.2);
+  -webkit-backdrop-filter: blur(4px) saturate(1.2);
+}
+.consulta-clip-modal {
+    background: none;
+    border-radius: 18px;
+    max-width: 1100px;
+    width: 99vw;
+    max-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: popIn 0.22s cubic-bezier(0.4,0,0.2,1);
+    overflow: visible;
+    transition: box-shadow 0.18s, border 0.18s;
+}
+.consulta-clip-modal-close {
+    position: absolute;
+    top: -10px;
+    right: 94px;
+    background: var(--color-bg-white);
+    border: none;
+    color: #5699e6;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    line-height: 1;
+    transition: color 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.consulta-clip-modal-close:hover {
+    color: #0b0385;
+}
+
+.consulta-clip-modal-video {
+  width: 100%;
+  max-width: 900px;
+  min-width: 320px;
+  aspect-ratio: 16/9;
+  max-height: 72vh;
+  min-height: 180px;
+  border-radius: 18px;
+  margin-bottom: 18px;
+  background: #000;
+  box-shadow: 0 4px 18px #b3e5fc55, 0 1.5px 8px #1976d222;
+  border: 2.5px solid #b3e5fc;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .consulta-clip-modal {
+    max-width: 99vw;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  .consulta-clip-modal-video {
+    max-width: 98vw;
+    min-width: 0;
+    aspect-ratio: 16/9;
+    max-height: 48vw;
+  }
+}
+
+.consulta-clip-modal-info-score {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(90deg, #1976d2 60%, #002b4e 100%);
+  border-radius: 16px;
+  padding: 3px 14px 3px 10px;
+  box-shadow: 0 1px 4px #b3e5fc33;
+  letter-spacing: 0.01em;
+  display: inline-block;
+  margin-bottom: 0;
+  opacity: 0.97;
+}
+
+.consulta-clip-modal-info-time {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #001b4e;
+  background: linear-gradient(90deg, #fdfeff 60%, #759fc2 100%);
+  border-radius: 16px;
+  padding: 3px 14px 3px 10px;
+  box-shadow: 0 1px 4px #b3e5fc33;
+  letter-spacing: 0.01em;
+  display: inline-block;
+  margin-bottom: 0;
+  opacity: 0.97;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes popIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+
+/* Tarjeta de clip: thumbnail como fondo, info superpuesta */
+.consulta-clip-card-horizontal {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  width: 100%;
+  min-width: 180px;
+  max-width: 340px;
+  min-height: 100px;
+  max-height: 180px;
+  border-radius: 13px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px #b3e5fc55;
+  background: #e3f2fd;
+  cursor: pointer;
+  transition: box-shadow 0.16s, transform 0.13s;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+}
+.consulta-clip-card-horizontal:hover {
+  box-shadow: 0 6px 24px #1976d244;
+  transform: translateY(-2px) scale(1.012);
+}
+.consulta-clip-card-horizontal .consulta-clip-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 0;
+  background: #000;
+  transition: filter 0.18s;
+}
+.consulta-clip-card-horizontal:hover .consulta-clip-video {
+  filter: brightness(0.92) blur(0.5px);
+}
+.consulta-clip-card-horizontal .consulta-clip-info {
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 13px 15px 0 15px;
+  width: 100%;
+  pointer-events: none;
+}
+.consulta-clip-card-horizontal .consulta-clip-score {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+  border-radius: 16px;
+  padding: 3px 14px 3px 10px;
+  box-shadow: 0 1px 4px #b3e5fc33;
+  letter-spacing: 0.01em;
+  display: inline-block;
+  margin-bottom: 0;
+  opacity: 0.97;
+}
+.consulta-clip-card-horizontal .consulta-clip-score b {
+  color: #fff;
+  font-weight: 800;
+  margin-right: 6px;
+}
+.consulta-clip-card-horizontal .consulta-clip-time {
+  font-size: 1.01rem;
+  color: #0f6cc9;
+  background: #ffffffcc;
+  border-radius: 13px;
+  padding: 2.5px 12px 2.5px 9px;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 1px 4px #b3e5fc22;
+  letter-spacing: 0.01em;
+  margin-top: 4px;
+  opacity: 1.0;
+}
+
+@media (max-width: 600px) {
+  .consulta-clip-card-horizontal {
+    max-width: 100vw;
+    min-width: 0;
+    min-height: 80px;
+    aspect-ratio: 16/9;
+    margin-bottom: 13px;
+    padding: 0;
+  }
+  .consulta-clip-card-horizontal .consulta-clip-info {
+    padding: 8px 7px 0 7px;
+    gap: 5px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .consulta-clip-card-horizontal {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 7px;
+    padding: 7px 4px;
+  }
+  .consulta-clip-card-horizontal .consulta-clip-video {
+    width: 100%;
+    height: 110px;
+    max-width: 100vw;
+  }
+  .consulta-clip-card-horizontal .consulta-clip-info {
+    align-items: flex-start;
+    padding-left: 0;
+  }
+}
+/* Layout principal responsive */
+
+.app-layout {
+    display: flex;
+    background: linear-gradient(to bottom, #cde4fa -50%, whitesmoke 100%);  min-height: 0;
+    height: 100dvh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 420px;
+    min-width: 260px;
+    max-width: 100vw;
+    background: #ffffff;
+    color: white;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+
+
+.main-content {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    justify-content: stretch;
+    gap: 0;
+    padding: 0.5rem 0.5vw 0.5rem 0.5vw;
+    box-sizing: border-box;
+}
+
+
+
+
+.consulta {
+    flex: 1 1 auto;
+    min-height: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    color: #1976d2;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    max-height: none;
+    height: auto;
+    overflow: hidden;
+}
+
+/* El grid de clips de consulta debe hacer scroll */
+ .consulta-clips-grid {
+     flex: 1 1 auto;
+     min-height: 0;
+     max-height: 100%;
+     overflow-y: auto;
+     padding-bottom: 1.5rem;
+}
+.consulta-clips-grid-scroll {
+  overflow-y: auto;
+  max-height: 340px;
+  min-height: 220px;
+}
+
+.consulta-disabled {
+    background: #e0e0e0 !important;
+    color: #888 !important;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+@media (max-width: 800px) {
+    .app-layout {
+        flex-direction: column;
+        height: 100dvh;
+        min-height: 0;
+        width: 100vw;
+    }
+
+    .sidebar {
+        width: 100vw;
+        min-width: 0;
+        height: auto;
+        max-width: 100vw;
+        max-height: 200px;
+    }
+
+    .main-content {
+        width: 100%;
+        height: calc(100dvh - 200px);
+        min-height: 0;
+    }
+
+    .video-player {
+        min-height: 420px;
+        max-height: 420px;
+        height: 420px;
+        box-sizing: border-box;
+    }
+    .consulta {
+        min-height: 0;
+        overflow: auto;
+    }
+}
