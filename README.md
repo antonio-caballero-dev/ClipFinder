@@ -80,7 +80,7 @@ La aplicación web estará disponible en `http://localhost:5173` y el backend en
 
 ## Dependencias principales / Main Dependencies
 - ⚡ [FastAPI](https://fastapi.tiangolo.com/)
-- 🎞️ [moviepy](https://zulko.github.io/moviepy/)
+- 🎞️ [ffmpeg](https://ffmpeg.org/)
 - 📝 [openai-whisper](https://github.com/openai/whisper)
 - 🧠 [sentence-transformers](https://www.sbert.net/)
 - ⚛️ [React](https://react.dev/)
