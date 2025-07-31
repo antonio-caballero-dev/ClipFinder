@@ -1,10 +1,10 @@
 # ClipFinder
 
 ## Descripción (Español)
-ClipFinder es una aplicación web que permite buscar y extraer clips relevantes de videos largos a partir de consultas en lenguaje natural. Utiliza modelos de transcripción automática (Whisper) y embeddings semánticos para localizar los fragmentos más relevantes según la consulta del usuario.
+ClipFinder es una aplicación web que permite buscar y extraer clips relevantes de videos largos a partir de consultas en lenguaje natural. Utiliza modelos de transcripción automática (Whisper) y embeddings semánticos para localizar los fragmentos más relevantes según la consulta del usuario. La idea está inspirada en el funcionamiento del juego [Her Story](https://www.herstorygame.com/).
 
 ## Description (English)
-ClipFinder is a web application that allows you to search and extract relevant clips from long videos using natural language queries. It leverages automatic transcription (Whisper) and semantic embeddings to find the most relevant segments according to the user's query.
+ClipFinder is a web application that allows you to search and extract relevant clips from long videos using natural language queries. It leverages automatic transcription (Whisper) and semantic embeddings to find the most relevant segments according to the user's query. The idea is inspired by the mechanics of the game [Her Story](https://www.herstorygame.com/).
 
 ---
 
@@ -71,7 +71,7 @@ ClipFinder/
 
 ---
 
-## Modelos utilizados / Used Models
+## Modelos / Models
 - **Transcripción:** [Whisper Small](https://huggingface.co/openai/whisper-small)
 - **Embeddings:** [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
 
