@@ -11,12 +11,14 @@
 
 ClipFinder es una aplicación web que permite buscar y extraer clips relevantes de videos largos a partir de consultas en lenguaje natural. Utiliza modelos de transcripción automática (Whisper) y embeddings semánticos para localizar los fragmentos más relevantes según la consulta del usuario. La idea está inspirada en el funcionamiento del juego [Her Story](https://www.herstorygame.com/).
 
-**Nota:** Para generar transcripciones y embeddings de forma eficiente se recomienda disponer de una GPU compatible con CUDA. El sistema está ajustado y probado principalmente para vídeos en español.
+.[!NOTE]
+Para generar transcripciones y embeddings de forma eficiente se recomienda disponer de una GPU compatible con CUDA. El sistema está ajustado y probado principalmente para vídeos en español.
 
 ## Description (English)
 ClipFinder is a web application that allows you to search and extract relevant clips from long videos using natural language queries. It leverages automatic transcription (Whisper) and semantic embeddings to find the most relevant segments according to the user's query. The idea is inspired by the mechanics of the game [Her Story](https://www.herstorygame.com/).
 
-**Note:** For efficient transcription and embedding generation, a CUDA-compatible GPU is recommended. The system is tuned and tested mainly for Spanish-language videos.
+.[!NOTE]
+For efficient transcription and embedding generation, a CUDA-compatible GPU is recommended. The system is tuned and tested mainly for Spanish-language videos.
 
 ---
 
