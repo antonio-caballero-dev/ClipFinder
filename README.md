@@ -71,6 +71,12 @@ ClipFinder/
 
 ---
 
+## Modelos utilizados / Used Models
+- **Transcripción:** [Whisper Small](https://huggingface.co/openai/whisper-small)
+- **Embeddings:** [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
+
+---
+
 ## Dependencias principales / Main Dependencies
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [moviepy](https://zulko.github.io/moviepy/)
@@ -82,12 +88,19 @@ ClipFinder/
 ---
 
 ## Atribuciones / Attributions
-- Escuela de Ingeniería y Arquitectura (EINA) de la Universidad de Zaragoza, CC BY 3.0, vía Wikimedia Commons. Video: Atenea_EINA_267
+- El video "Atenea_EINA_267" de la Escuela de Ingeniería y Arquitectura (EINA) de la Universidad de Zaragoza, CC BY 3.0, vía Wikimedia Commons, se utiliza únicamente como ejemplo demostrativo en esta aplicación.
+
+
+## Video demostrativo / Demo Video
+
+Aquí puedes ver un video demostrativo del funcionamiento de ClipFinder:
+
+<!-- Reemplaza el enlace de YouTube por el tuyo si lo tienes -->
+[![Demo de ClipFinder](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
 
 ---
-
 ## Licencia / License
-Este proyecto se distribuye sin licencia explícita. Consulta con el autor para usos comerciales o de investigación.
+Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 ---
 
