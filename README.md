@@ -92,5 +92,5 @@ Este proyecto se distribuye sin licencia explícita. Consulta con el autor para 
 ---
 
 ## Autor / Author
-Antonio Caballero
-- [LinkedIn](www.linkedin.com/in/antonio-caballero-carrasco)
+Antonio Caballero  
+[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="30" alt="LinkedIn"/>](https://www.linkedin.com/in/antoniocaballerocarrasco)
