@@ -93,3 +93,4 @@ Este proyecto se distribuye sin licencia explícita. Consulta con el autor para 
 
 ## Autor / Author
 Antonio Caballero
+- [LinkedIn](www.linkedin.com/in/antonio-caballero-carrasco)
